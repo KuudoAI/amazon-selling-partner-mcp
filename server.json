@@ -12,12 +12,12 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://{HOSTNAME}/mcp",
+      "url": "https://{SELLING_PARTNER_HOST}/mcp",
       "variables": {
-        "HOSTNAME": {
+        "SELLING_PARTNER_HOST": {
           "description": "Hostname of your Amazon Selling Partner MCP deployment.",
           "isRequired": true,
-          "placeholder": "mcp.example.com"
+          "placeholder": "selling-partner.example.com"
         }
       },
       "headers": [
