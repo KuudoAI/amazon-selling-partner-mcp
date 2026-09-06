@@ -73,7 +73,7 @@ server.setRequestHandler(GetPromptRequestSchema, async (request) => {
   if (request.params.name !== CONNECT_PROMPT) throw new McpError(ErrorCode.InvalidParams, `Unknown prompt: ${request.params.name}`);
   return {
     description: "Connect guidance for this catalog-only stub.",
-    messages: [{ role: "user", content: { type: "text", text: guidance("This catalog") } }],
+    messages: [{ role: "user", content: { type: "text", text: guidance("The live server described by this catalog") } }],
   };
 });
 
