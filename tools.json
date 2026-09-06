@@ -1,0 +1,3853 @@
+{
+  "registryName": "io.github.KuudoAI/amazon-selling-partner-mcp",
+  "version": "1.0.0",
+  "featureUrl": "https://www.kuudo.com/features/amazon-selling-partner-mcp/",
+  "connectUrl": "https://<your-host>/mcp",
+  "operationCount": 304,
+  "toolCount": 303,
+  "toolSurfaceNote": "304 Selling Partner API operations exposed as 303 tools, because two operations share one name. The production server's built-in setup and status tools are not listed here.",
+  "resources": [
+    {
+      "name": "AplusContent",
+      "count": 10
+    },
+    {
+      "name": "AppIntegrations",
+      "count": 3
+    },
+    {
+      "name": "ApplicationManagement",
+      "count": 1
+    },
+    {
+      "name": "Awd",
+      "count": 11
+    },
+    {
+      "name": "CatalogItems",
+      "count": 2
+    },
+    {
+      "name": "CatalogItems20201201",
+      "count": 2
+    },
+    {
+      "name": "CatalogItemsV0",
+      "count": 1
+    },
+    {
+      "name": "CustomerFeedback",
+      "count": 7
+    },
+    {
+      "name": "DataKiosk",
+      "count": 5
+    },
+    {
+      "name": "DeliveryByAmazon",
+      "count": 2
+    },
+    {
+      "name": "EasyShip",
+      "count": 5
+    },
+    {
+      "name": "ExternalFulfillmentInventory",
+      "count": 1
+    },
+    {
+      "name": "ExternalFulfillmentReturns",
+      "count": 2
+    },
+    {
+      "name": "ExternalFulfillmentShipments",
+      "count": 10
+    },
+    {
+      "name": "FbaInboundEligibility",
+      "count": 1
+    },
+    {
+      "name": "FbaInventory",
+      "count": 4
+    },
+    {
+      "name": "Feeds",
+      "count": 6
+    },
+    {
+      "name": "Fees",
+      "count": 3
+    },
+    {
+      "name": "Finances",
+      "count": 1
+    },
+    {
+      "name": "FinancesV0",
+      "count": 4
+    },
+    {
+      "name": "FulfillmentInbound",
+      "count": 45
+    },
+    {
+      "name": "FulfillmentInboundV0",
+      "count": 6
+    },
+    {
+      "name": "FulfillmentOutbound",
+      "count": 14
+    },
+    {
+      "name": "Invoices",
+      "count": 10
+    },
+    {
+      "name": "ListingsItems",
+      "count": 5
+    },
+    {
+      "name": "ListingsItems20200901",
+      "count": 3
+    },
+    {
+      "name": "ListingsRestrictions",
+      "count": 1
+    },
+    {
+      "name": "MerchantFulfillment",
+      "count": 5
+    },
+    {
+      "name": "Messaging",
+      "count": 12
+    },
+    {
+      "name": "Notifications",
+      "count": 8
+    },
+    {
+      "name": "Orders",
+      "count": 10
+    },
+    {
+      "name": "Ordersv2",
+      "count": 2
+    },
+    {
+      "name": "ProductPricing",
+      "count": 6
+    },
+    {
+      "name": "ProductPricing20220501",
+      "count": 2
+    },
+    {
+      "name": "ProductType",
+      "count": 2
+    },
+    {
+      "name": "Replenishment",
+      "count": 3
+    },
+    {
+      "name": "Replenishment20221107",
+      "count": 3
+    },
+    {
+      "name": "Reports",
+      "count": 9
+    },
+    {
+      "name": "Sales",
+      "count": 1
+    },
+    {
+      "name": "Sellers",
+      "count": 2
+    },
+    {
+      "name": "SellerWallet",
+      "count": 12
+    },
+    {
+      "name": "Services",
+      "count": 17
+    },
+    {
+      "name": "ShipmentInvoicing",
+      "count": 3
+    },
+    {
+      "name": "Shipping",
+      "count": 19
+    },
+    {
+      "name": "ShippingLegacy",
+      "count": 9
+    },
+    {
+      "name": "Solicitations",
+      "count": 2
+    },
+    {
+      "name": "SupplySources",
+      "count": 6
+    },
+    {
+      "name": "Tokens",
+      "count": 1
+    },
+    {
+      "name": "Transfers",
+      "count": 2
+    },
+    {
+      "name": "Uploads",
+      "count": 1
+    },
+    {
+      "name": "Vehicles",
+      "count": 1
+    }
+  ],
+  "tools": [
+    {
+      "name": "AplusContent_validateContentDocumentAsinRelations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Checks if the A+ Content document is valid for use on a set of ASINs.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_searchContentDocuments",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of all A+ Content documents, including metadata, that are assigned to a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_createContentDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a new A+ Content document.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_getContentDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns an A+ Content document, if available.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_updateContentDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates an existing A+ Content document.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_postContentDocumentApprovalSubmission",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits an A+ Content document for review, approval, and publishing.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_listContentDocumentAsinRelations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of ASINs that are related to the specified A+ Content document, if available.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_postContentDocumentAsinRelations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Replaces all ASINs related to the specified A+ Content document, if available.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_postContentDocumentSuspendSubmission",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits a request to suspend visible A+ Content.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AplusContent_searchContentPublishRecords",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Searches for A+ Content publishing records, if available.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "AplusContent",
+      "operations": 1
+    },
+    {
+      "name": "AppIntegrations_createNotification",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Create a notification for sellers in Seller Central.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AppIntegrations",
+      "operations": 1
+    },
+    {
+      "name": "AppIntegrations_deleteNotifications",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Remove your application's notifications from the Appstore notifications dashboard.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AppIntegrations",
+      "operations": 1
+    },
+    {
+      "name": "AppIntegrations_recordActionFeedback",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Records the seller's response to a notification.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "AppIntegrations",
+      "operations": 1
+    },
+    {
+      "name": "ApplicationManagement_rotateApplicationClientSecret",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Rotates application client secrets for a developer application.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ApplicationManagement",
+      "operations": 1
+    },
+    {
+      "name": "Awd_checkInboundEligibility",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Determines if the packages you specify are eligible for an AWD inbound order and contains error details for ineligible packages.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_createInbound",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a draft AWD inbound order with a list of packages for inbound shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_getInbound",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves an AWD inbound order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_updateInbound",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates an AWD inbound order that is in DRAFT status and not yet confirmed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_cancelInbound",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels an AWD Inbound order and its associated shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_confirmInbound",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirms an AWD inbound order in DRAFT status.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_listInboundShipments",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves a summary of all the inbound AWD shipments associated with a merchant, with the ability to apply optional filters.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_getInboundShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves an AWD inbound shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_getInboundShipmentLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves the box labels for a shipment ID that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_updateInboundShipmentTransportDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates transport details for an AWD shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "Awd_listInventory",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Lists AWD inventory associated with a merchant with the ability to apply optional filters.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Awd",
+      "operations": 1
+    },
+    {
+      "name": "CatalogItems_searchCatalogItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Search for a list of Amazon catalog items and item-related information.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CatalogItems",
+      "operations": 1
+    },
+    {
+      "name": "CatalogItems_getCatalogItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves details for an item in the Amazon catalog.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CatalogItems",
+      "operations": 1
+    },
+    {
+      "name": "CatalogItems20201201_searchCatalogItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Search for and return a list of Amazon catalog items and associated information.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CatalogItems20201201",
+      "operations": 1
+    },
+    {
+      "name": "CatalogItems20201201_getCatalogItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves details for an item in the Amazon catalog.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CatalogItems20201201",
+      "operations": 1
+    },
+    {
+      "name": "CatalogItemsV0_listCatalogCategories",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the parent categories to which an item belongs, based on the specified ASIN or SellerSKU.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CatalogItemsV0",
+      "operations": 1
+    },
+    {
+      "name": "CustomerFeedback_getBrowseNodeReturnTopics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve the topics that customers mention when they return items in a browse node.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CustomerFeedback",
+      "operations": 1
+    },
+    {
+      "name": "CustomerFeedback_getBrowseNodeReturnTrends",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve the trends of topics that customers mention when they return items in a browse node.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CustomerFeedback",
+      "operations": 1
+    },
+    {
+      "name": "CustomerFeedback_getBrowseNodeReviewTopics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a browse node's ten most positive and ten most negative review topics.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CustomerFeedback",
+      "operations": 1
+    },
+    {
+      "name": "CustomerFeedback_getBrowseNodeReviewTrends",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve the positive and negative review trends of items in a browse node for the past six months.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CustomerFeedback",
+      "operations": 1
+    },
+    {
+      "name": "CustomerFeedback_getItemBrowseNode",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API returns the associated browse node of the requested ASIN.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CustomerFeedback",
+      "operations": 1
+    },
+    {
+      "name": "CustomerFeedback_getItemReviewTopics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve an item's ten most positive and ten most negative review topics.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CustomerFeedback",
+      "operations": 1
+    },
+    {
+      "name": "CustomerFeedback_getItemReviewTrends",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve an item's positive and negative review trends for the past six months.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "CustomerFeedback",
+      "operations": 1
+    },
+    {
+      "name": "DataKiosk_getDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the information required for retrieving a Data Kiosk document's contents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "DataKiosk",
+      "operations": 1
+    },
+    {
+      "name": "DataKiosk_getQueries",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns details for the Data Kiosk queries that match the specified filters.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "DataKiosk",
+      "operations": 1
+    },
+    {
+      "name": "DataKiosk_createQuery",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a Data Kiosk query request.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "DataKiosk",
+      "operations": 1
+    },
+    {
+      "name": "DataKiosk_cancelQuery",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels the query specified by the queryId parameter.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "DataKiosk",
+      "operations": 1
+    },
+    {
+      "name": "DataKiosk_getQuery",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns query details for the query specified by the queryId parameter.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "DataKiosk",
+      "operations": 1
+    },
+    {
+      "name": "DeliveryByAmazon_submitInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits a shipment invoice for a given order or shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "DeliveryByAmazon",
+      "operations": 1
+    },
+    {
+      "name": "DeliveryByAmazon_getInvoiceStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the invoice status for the order or shipment you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "DeliveryByAmazon",
+      "operations": 1
+    },
+    {
+      "name": "EasyShip_getScheduledPackage",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns information about a package, including dimensions, weight, time slot information for handover, invoice and item information, and status.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "EasyShip",
+      "operations": 1
+    },
+    {
+      "name": "EasyShip_updateScheduledPackages",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the time slot for handing over the package indicated by the specified scheduledPackageId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "EasyShip",
+      "operations": 1
+    },
+    {
+      "name": "EasyShip_createScheduledPackage",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Schedules an Easy Ship order and returns the scheduled package information.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "EasyShip",
+      "operations": 1
+    },
+    {
+      "name": "EasyShip_createScheduledPackageBulk",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This operation automatically schedules a time slot for all the amazonOrderIds given as input, generating the associated shipping labels, along with other compliance documents according to the…",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "EasyShip",
+      "operations": 1
+    },
+    {
+      "name": "EasyShip_listHandoverSlots",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns time slots available for Easy Ship orders to be scheduled based on the package weight and dimensions that the seller specifies.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "EasyShip",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentInventory_batchInventory",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Make up to 10 inventory requests.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ExternalFulfillmentInventory",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentReturns_listReturns",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a list of return items.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ExternalFulfillmentReturns",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentReturns_getReturn",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve the return item with the specified ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ExternalFulfillmentReturns",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_getShipments",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get a list of shipments created for the seller in the status you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_getShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get a single shipment with the ID you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_processShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirm or reject the specified shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_retrieveInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve invoices for the shipment you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_generateInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get invoices for the shipment you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_createPackages",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provide details about the packages in the specified shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_updatePackageStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the status of the packages.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_updatePackage",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the details about the packages that will be used to fulfill the specified shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_generateShipLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Generate and retrieve all shipping labels for one or more packages in the shipment you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "ExternalFulfillmentShipments_retrieveShippingOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get a list of shipping options for a package in a shipment given the shipment's marketplace and channel.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ExternalFulfillmentShipments",
+      "operations": 1
+    },
+    {
+      "name": "FbaInboundEligibility_getItemEligibilityPreview",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This operation gets an eligibility preview for an item that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FbaInboundEligibility",
+      "operations": 1
+    },
+    {
+      "name": "FbaInventory_createInventoryItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Requests that Amazon create product-details in the Sandbox Inventory in the sandbox environment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FbaInventory",
+      "operations": 1
+    },
+    {
+      "name": "FbaInventory_addInventory",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Requests that Amazon add items to the Sandbox Inventory with desired amount of quantity in the sandbox environment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FbaInventory",
+      "operations": 1
+    },
+    {
+      "name": "FbaInventory_deleteInventoryItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Requests that Amazon Deletes an item from the Sandbox Inventory in the sandbox environment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FbaInventory",
+      "operations": 1
+    },
+    {
+      "name": "FbaInventory_getInventorySummaries",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of inventory summaries.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FbaInventory",
+      "operations": 1
+    },
+    {
+      "name": "Feeds_createFeedDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a feed document for the feed type that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Feeds",
+      "operations": 1
+    },
+    {
+      "name": "Feeds_getFeedDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the information required for retrieving a feed document's contents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Feeds",
+      "operations": 1
+    },
+    {
+      "name": "Feeds_getFeeds",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns feed details for the feeds that match the filters that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Feeds",
+      "operations": 1
+    },
+    {
+      "name": "Feeds_createFeed",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a feed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Feeds",
+      "operations": 1
+    },
+    {
+      "name": "Feeds_cancelFeed",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels the feed that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Feeds",
+      "operations": 1
+    },
+    {
+      "name": "Feeds_getFeed",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns feed details (including the resultDocumentId, if available) for the feed that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Feeds",
+      "operations": 1
+    },
+    {
+      "name": "Fees_getMyFeesEstimates",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the estimated fees for a list of products.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Fees",
+      "operations": 1
+    },
+    {
+      "name": "Fees_getMyFeesEstimateForASIN",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the estimated fees for the item indicated by the specified ASIN in the marketplace specified in the request body.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Fees",
+      "operations": 1
+    },
+    {
+      "name": "Fees_getMyFeesEstimateForSKU",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the estimated fees for the item indicated by the specified seller SKU in the marketplace specified in the request body.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Fees",
+      "operations": 1
+    },
+    {
+      "name": "Finances_listTransactions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns transactions for the given parameters.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Finances",
+      "operations": 1
+    },
+    {
+      "name": "FinancesV0_listFinancialEventGroups",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns financial event groups for a given date range.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FinancesV0",
+      "operations": 1
+    },
+    {
+      "name": "FinancesV0_listFinancialEventsByGroupId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns all financial events for the specified financial event group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FinancesV0",
+      "operations": 1
+    },
+    {
+      "name": "FinancesV0_listFinancialEvents",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns financial events for the specified data range.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FinancesV0",
+      "operations": 1
+    },
+    {
+      "name": "FinancesV0_listFinancialEventsByOrderId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns all financial events for the specified order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FinancesV0",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listInboundPlans",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a list of inbound plans with minimal information.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_createInboundPlan",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_getInboundPlan",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Fetches the top level information about an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listInboundPlanBoxes",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a paginated list of box packages in an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_cancelInboundPlan",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels an Inbound Plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listInboundPlanItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a paginated list of item packages in an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_updateInboundPlanName",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the name of an existing inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listPackingGroupBoxes",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves a page of boxes from a given packing group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listPackingGroupItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves a page of items in a given packing group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_setPackingInformation",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sets packing information for an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listPackingOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves a list of all packing options for an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_generatePackingOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Generates available packing options for the inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_confirmPackingOption",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirms the packing option for an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listInboundPlanPallets",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a paginated list of pallet packages in an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listPlacementOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a list of all placement options for an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_generatePlacementOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Generates placement options for the inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_confirmPlacementOption",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirms the placement option for an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_getShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides the full details for a specific shipment within an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listShipmentBoxes",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a paginated list of box packages in a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listShipmentContentUpdatePreviews",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a paginated list of shipment content update previews for a given shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_generateShipmentContentUpdatePreviews",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Generate a shipment content update preview given a set of intended boxes and/or items for a shipment with a confirmed carrier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_getShipmentContentUpdatePreview",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a shipment content update preview which provides a summary of the requested shipment content changes along with the transportation cost implications of the change that can only be confirmed…",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_confirmShipmentContentUpdatePreview",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirm a shipment content update preview and accept the changes in transportation cost.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_getDeliveryChallanDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provide delivery challan document for PCP transportation in IN marketplace.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listDeliveryWindowOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves all delivery window options for a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_generateDeliveryWindowOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Generates available delivery window options for a given shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_confirmDeliveryWindowOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirms the delivery window option for chosen shipment within an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listShipmentItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a paginated list of item packages in a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_updateShipmentName",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the name of an existing shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listShipmentPallets",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides a paginated list of pallet packages in a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_cancelSelfShipAppointment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels a self-ship appointment slot against a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_getSelfShipAppointmentSlots",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves a list of available self-ship appointment slots used to drop off a shipment at a warehouse.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_generateSelfShipAppointmentSlots",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Initiates the process of generating the appointment slots list.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_scheduleSelfShipAppointment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirms or reschedules a self-ship appointment slot against a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_updateShipmentSourceAddress",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the source address of an existing shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_updateShipmentTrackingDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates a shipment's tracking details.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listTransportationOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieves all transportation options for a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_generateTransportationOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Generates available transportation options for a given placement option.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_confirmTransportationOptions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Confirms all the transportation options for an inbound plan.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listItemComplianceDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. List the inbound compliance details for MSKUs in a given marketplace.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_updateItemComplianceDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Update compliance details for a list of MSKUs.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_createMarketplaceItemLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. For a given marketplace - creates labels for a list of MSKUs.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_listPrepDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get preparation details for a list of MSKUs in a specified marketplace.\\n\\nNote: MSKUs that contain certain characters must be encoded.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_setPrepDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Set the preparation details for a list of MSKUs in a specified marketplace.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInbound_getInboundOperationStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Gets the status of the processing of an asynchronous API call.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInboundV0_getPrepInstructions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns labeling requirements and item preparation instructions to help prepare items for shipment to Amazon's fulfillment network.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInboundV0",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInboundV0_getShipmentItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of items in a specified inbound shipment, or a list of items that were updated within a specified time frame.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInboundV0",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInboundV0_getShipments",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of inbound shipments based on criteria that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInboundV0",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInboundV0_getBillOfLading",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a bill of lading for a Less Than Truckload/Full Truckload (LTL/FTL) shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInboundV0",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInboundV0_getShipmentItemsByShipmentId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of items in a specified inbound shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInboundV0",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentInboundV0_getLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns package/pallet labels for faster and more accurate shipment processing at the Amazon fulfillment center.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentInboundV0",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_deliveryOffers",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns delivery options that include an estimated delivery date and offer expiration, based on criteria that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_getFeatures",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of features available for Multi-Channel Fulfillment orders in the marketplace you specify, and whether the seller for which you made the call is enrolled for each feature.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_getFeatureInventory",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of inventory items that are eligible for the fulfillment feature you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_getFeatureSKU",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the number of items with the sellerSku you specify that can have orders fulfilled using the specified feature.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_listAllFulfillmentOrders",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of fulfillment orders fulfilled after (or at) a specified date-time, or indicated by the nextToken parameter.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_createFulfillmentOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Requests that Amazon ship items from the seller's inventory in Amazon's fulfillment network to a destination address.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_getFulfillmentPreview",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of fulfillment order previews based on shipping criteria that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_getFulfillmentOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the fulfillment order indicated by the specified order identifier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_updateFulfillmentOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates and/or requests shipment for a fulfillment order with an order hold on it.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_cancelFulfillmentOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Requests that Amazon stop attempting to fulfill the fulfillment order indicated by the specified order identifier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_createFulfillmentReturn",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a fulfillment return.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_submitFulfillmentOrderStatusUpdate",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Requests that Amazon update the status of an order in the sandbox testing environment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_listReturnReasonCodes",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of return reason codes for a seller SKU in a given marketplace.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "FulfillmentOutbound_getPackageTrackingDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns delivery tracking information for a package in an outbound shipment for a Multi-Channel Fulfillment order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "FulfillmentOutbound",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getInvoicesAttributes",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns marketplace-dependent schemas and their respective set of possible values.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getInvoicesDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the invoice document's ID and URL.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getInvoicesExports",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns invoice exports details for exports that match the filters that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_createInvoicesExport",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates an invoice export request.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getInvoicesExport",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns invoice export details (including the exportDocumentId, if available) for the export that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getGovernmentInvoiceStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the status of an invoice generation request.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_createGovernmentInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits an asynchronous government invoice creation request.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getGovernmentInvoiceDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns an invoiceDocument object containing an invoiceDocumentUrl .",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getInvoices",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns invoice details for the invoices that match the filters that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "Invoices_getInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns invoice data for the specified invoice.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Invoices",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems_searchListingsItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Search for and return a list of selling partner listings items and their respective details.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ListingsItems",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems_deleteListingsItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Delete a listings item for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ListingsItems",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems_getListingsItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns details about a listings item for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ListingsItems",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems_patchListingsItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Partially update (patch) a listings item for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ListingsItems",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems_putListingsItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a new or fully-updates an existing listings item for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ListingsItems",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems20200901_deleteListingsItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Delete a listings item for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ListingsItems20200901",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems20200901_patchListingsItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Partially update (patch) a listings item for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ListingsItems20200901",
+      "operations": 1
+    },
+    {
+      "name": "ListingsItems20200901_putListingsItem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a new or fully-updates an existing listings item for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ListingsItems20200901",
+      "operations": 1
+    },
+    {
+      "name": "ListingsRestrictions_getListingsRestrictions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns listing restrictions for an item in the Amazon Catalog.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ListingsRestrictions",
+      "operations": 1
+    },
+    {
+      "name": "MerchantFulfillment_getAdditionalSellerInputs",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Gets a list of additional seller inputs required for a ship method.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "MerchantFulfillment",
+      "operations": 1
+    },
+    {
+      "name": "MerchantFulfillment_getEligibleShipmentServices",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of shipping service offers that satisfy the specified shipment request details.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "MerchantFulfillment",
+      "operations": 1
+    },
+    {
+      "name": "MerchantFulfillment_createShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Create a shipment with the information provided.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "MerchantFulfillment",
+      "operations": 1
+    },
+    {
+      "name": "MerchantFulfillment_cancelShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancel the shipment indicated by the specified shipment identifier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "MerchantFulfillment",
+      "operations": 1
+    },
+    {
+      "name": "MerchantFulfillment_getShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the shipment information for an existing shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "MerchantFulfillment",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_getMessagingActionsForOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of message types that are available for an order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_GetAttributes",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a response containing attributes related to an order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_CreateAmazonMotors",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a message to a buyer to provide details about an Amazon Motors order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_confirmCustomizationDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a message asking a buyer to provide or verify customization details such as name spelling, images, initials, etc.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_createConfirmDeliveryDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a message to a buyer to arrange a delivery or to confirm contact information for making a delivery.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_createConfirmOrderDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a message to ask a buyer an order-related question prior to shipping their order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_createConfirmServiceDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a message to contact a Home Service customer to arrange a service call or to gather information prior to a service call.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_createDigitalAccessKey",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a buyer a message to share a digital access key that is required to utilize digital content in their order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_sendInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a message providing the buyer an invoice",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_createLegalDisclosure",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a critical message that contains documents that a seller is legally obligated to provide to the buyer.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_createUnexpectedProblem",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a critical message to a buyer that an unexpected problem was encountered affecting the completion of the order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Messaging_CreateWarranty",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a message to a buyer to provide details about warranty information on a purchase in their order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Messaging",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_getDestinations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns information about all destinations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_createDestination",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a destination resource to receive notifications.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_deleteDestination",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Deletes the destination that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_getDestination",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns information about the destination that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_getSubscription",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns information about subscription of the specified notification type and payload version.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_createSubscription",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a subscription for the specified notification type to be delivered to the specified destination.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_deleteSubscriptionById",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Deletes the subscription indicated by the subscription identifier and notification type that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Notifications_getSubscriptionById",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns information about a subscription for the specified notification type.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Notifications",
+      "operations": 1
+    },
+    {
+      "name": "Orders_getOrders",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns orders that are created or updated during the specified time period.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_getOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_getOrderAddress",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the shipping address for the order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_getOrderBuyerInfo",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns buyer information for the order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_getOrderItems",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns detailed order item information for the order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_getOrderItemsBuyerInfo",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns buyer information for the order items in the order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_getOrderRegulatedInfo",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns regulated information for the order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_updateVerificationStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates (approves or rejects) the verification status of an order containing regulated products.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_updateShipmentStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Update the shipment status for an order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Orders_confirmShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the shipment confirmation status for a specified order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Orders",
+      "operations": 1
+    },
+    {
+      "name": "Ordersv2_searchOrders",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns orders that are created or updated during the time period that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Ordersv2",
+      "operations": 1
+    },
+    {
+      "name": "Ordersv2_getOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Ordersv2",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing_getItemOffersBatch",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the lowest priced offers for a batch of items based on ASIN.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing_getListingOffersBatch",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the lowest priced offers for a batch of listings by SKU.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing_getCompetitivePricing",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns competitive pricing information for a seller's offer listings based on seller SKU or ASIN.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing_getItemOffers",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the lowest priced offers for a single item based on ASIN.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing_getListingOffers",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the lowest priced offers for a single SKU listing.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing_getPricing",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns pricing information for a seller's offer listings based on seller SKU or ASIN.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing20220501_getCompetitiveSummary",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the competitive summary response, including featured buying options for the ASIN and marketplaceId combination.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing20220501",
+      "operations": 1
+    },
+    {
+      "name": "ProductPricing20220501_getFeaturedOfferExpectedPriceBatch",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the set of responses that correspond to the batched list of up to 40 requests defined in the request body.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductPricing20220501",
+      "operations": 1
+    },
+    {
+      "name": "ProductType_searchDefinitionsProductTypes",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Search for and return a list of Amazon product types that have definitions available.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductType",
+      "operations": 1
+    },
+    {
+      "name": "ProductType_getDefinitionsProductType",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve an Amazon product type definition.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ProductType",
+      "operations": 1
+    },
+    {
+      "name": "Replenishment_listOfferMetrics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns aggregated replenishment program metrics for a selling partner's offers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Replenishment",
+      "operations": 1
+    },
+    {
+      "name": "Replenishment_listOffers",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the details of a selling partner's replenishment program offers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Replenishment",
+      "operations": 1
+    },
+    {
+      "name": "Replenishment_getSellingPartnerMetrics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns aggregated replenishment program metrics for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Replenishment",
+      "operations": 1
+    },
+    {
+      "name": "Replenishment20221107_listOfferMetrics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns aggregated replenishment program metrics for a selling partner's offers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Replenishment20221107",
+      "operations": 1
+    },
+    {
+      "name": "Replenishment20221107_listOffers",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the details of a selling partner's replenishment program offers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Replenishment20221107",
+      "operations": 1
+    },
+    {
+      "name": "Replenishment20221107_getSellingPartnerMetrics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns aggregated replenishment program metrics for a selling partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Replenishment20221107",
+      "operations": 1
+    },
+    {
+      "name": "Reports_getReportDocument",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the information required for retrieving a report document's contents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_getReports",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns report details for the reports that match the filters that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_createReport",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a report.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_cancelReport",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels the report that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_getReport",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns report details (including the reportDocumentId, if available) for the report that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_getReportSchedules",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns report schedule details that match the filters that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_createReportSchedule",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates a report schedule.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_cancelReportSchedule",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels the report schedule that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Reports_getReportSchedule",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns report schedule details for the report schedule that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Reports",
+      "operations": 1
+    },
+    {
+      "name": "Sales_getOrderMetrics",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns aggregated order metrics for given interval, broken down by granularity, for given buyer type.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Sales",
+      "operations": 1
+    },
+    {
+      "name": "Sellers_getAccount",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns information about a seller account and its marketplaces.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Sellers",
+      "operations": 1
+    },
+    {
+      "name": "Sellers_getMarketplaceParticipations",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of marketplaces where the seller can list items and information about the seller's participation in those marketplaces.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Sellers",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_listAccounts",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get Seller Wallet accounts for a seller.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_getAccount",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a Seller Wallet bank account by Amazon account identifier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_listAccountBalances",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve the balance in a given Seller Wallet bank account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_listAccountTransactions",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a list of transactions for a given Seller Wallet bank account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_createTransaction",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Create a transaction request from a Seller Wallet account to another customer-provided account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_getTransaction",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Find a transaction by the Amazon transaction identifier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_getTransferPreview",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a list of potential fees on a transaction.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_listTransferSchedules",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve transfer schedules of a Seller Wallet bank account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_createTransferSchedule",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Create a transfer schedule request from a Seller Wallet account to another customer-provided account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_updateTransferSchedule",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Update transfer schedule information.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_deleteScheduleTransaction",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Delete a transaction request that is scheduled from Amazon Seller Wallet account to another customer-provided account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "SellerWallet_getTransferSchedule",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Find a particular Amazon Seller Wallet account transfer schedule.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SellerWallet",
+      "operations": 1
+    },
+    {
+      "name": "Services_getAppointmentSlots",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Gets appointment slots as per the service context specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_createServiceDocumentUploadDestination",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates an upload destination.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_createReservation",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Create a reservation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_cancelReservation",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancel a reservation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_updateReservation",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Update a reservation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_getServiceJobs",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Gets service job details for the specified filter query.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_getServiceJobByServiceJobId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Gets details of service job indicated by the provided serviceJobID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_getAppointmmentSlotsByJobId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Gets appointment slots for the service associated with the service job id specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_addAppointmentForServiceJobByServiceJobId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Adds an appointment to the service job indicated by the service job identifier specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_rescheduleAppointmentForServiceJobByServiceJobId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Reschedules an appointment for the service job indicated by the service job identifier specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_setAppointmentFulfillmentData",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Updates the appointment fulfillment data related to a given jobID and appointmentID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_assignAppointmentResources",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Assigns new resource(s) or overwrite/update the existing one(s) to a service job appointment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_cancelServiceJobByServiceJobId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels the service job indicated by the service job identifier specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_completeServiceJobByServiceJobId",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Completes the service job indicated by the service job identifier specified.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_getFixedSlotCapacity",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides capacity in fixed-size slots.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_getRangeSlotCapacity",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Provides capacity slots in a format similar to availability records.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "Services_updateSchedule",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Update the schedule of the given resource.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Services",
+      "operations": 1
+    },
+    {
+      "name": "ShipmentInvoicing_getShipmentDetails",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the shipment details required to issue an invoice for the specified shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ShipmentInvoicing",
+      "operations": 1
+    },
+    {
+      "name": "ShipmentInvoicing_submitInvoice",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Submits a shipment invoice document for a given shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ShipmentInvoicing",
+      "operations": 1
+    },
+    {
+      "name": "ShipmentInvoicing_getInvoiceStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the invoice status for the shipment you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ShipmentInvoicing",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getAccessPoints",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of access points in proximity of input postal code.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getCarrierAccountFormInputs",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API will return a list of input schema required to register a shipper account with the carrier.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getCarrierAccounts",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API will return Get all carrier accounts for a merchant.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_linkCarrierAccount",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API associates/links the specified carrier account with the merchant. Two API operations share this name; the server exposes one tool.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 2
+    },
+    {
+      "name": "Shipping_unlinkCarrierAccount",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API Unlink the specified carrier account with the merchant.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_createClaim",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API will be used to create claim for single eligible shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_generateCollectionForm",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API Call to generate the collection form.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getCollectionFormHistory",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API Call to get the history of the previously generated collection forms.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getCollectionForm",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API reprint a collection form.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_submitNdrFeedback",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API submits the NDR (Non-delivery Report) Feedback for any eligible shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_oneClickShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Purchases a shipping service identifier and returns purchase-related details and documents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_purchaseShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Purchases a shipping service and returns purchase related details and documents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getAdditionalInputs",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the JSON schema to use for providing additional inputs when needed to purchase a shipping offering.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_directPurchaseShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Purchases the shipping service for a shipment using the best fit service offering.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getRates",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the available shipping service offerings.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_cancelShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancels a purchased shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getShipmentDocuments",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the shipping documents associated with a package in a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getTracking",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns tracking information for a purchased shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "Shipping_getUnmanifestedShipments",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. This API Get all unmanifested carriers with shipment locations.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Shipping",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_getAccount",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Verify if the current account is valid.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_purchaseShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Purchase shipping labels.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_getRates",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get service rates.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_createShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Create a new shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_getShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Return the entire shipment object for the shipmentId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_cancelShipment",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Cancel a shipment by the given shipmentId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_retrieveShippingLabel",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve shipping label based on the shipment id and tracking id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_purchaseLabels",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Purchase shipping labels based on a given rate.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "ShippingLegacy_getTrackingInformation",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Return the tracking information of a shipment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "ShippingLegacy",
+      "operations": 1
+    },
+    {
+      "name": "Solicitations_getSolicitationActionsForOrder",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a list of solicitation types that are available for an order that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Solicitations",
+      "operations": 1
+    },
+    {
+      "name": "Solicitations_createProductReviewAndSellerFeedbackSolicitation",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Sends a solicitation to a buyer asking for seller feedback and a product review for the specified order.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Solicitations",
+      "operations": 1
+    },
+    {
+      "name": "SupplySources_getSupplySources",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. The path to retrieve paginated supply sources.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SupplySources",
+      "operations": 1
+    },
+    {
+      "name": "SupplySources_createSupplySource",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Create a new supply source.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SupplySources",
+      "operations": 1
+    },
+    {
+      "name": "SupplySources_archiveSupplySource",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Archive a supply source, making it inactive.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SupplySources",
+      "operations": 1
+    },
+    {
+      "name": "SupplySources_getSupplySource",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Retrieve a supply source.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "SupplySources",
+      "operations": 1
+    },
+    {
+      "name": "SupplySources_updateSupplySource",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Update the configuration and capabilities of a supply source.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SupplySources",
+      "operations": 1
+    },
+    {
+      "name": "SupplySources_updateSupplySourceStatus",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Update the status of a supply source.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "SupplySources",
+      "operations": 1
+    },
+    {
+      "name": "Tokens_createRestrictedDataToken",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns a Restricted Data Token (RDT) for one or more restricted resources that you specify.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Tokens",
+      "operations": 1
+    },
+    {
+      "name": "Transfers_getPaymentMethods",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Returns the list of payment methods for the seller, which can be filtered by method type.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Transfers",
+      "operations": 1
+    },
+    {
+      "name": "Transfers_initiatePayout",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Initiates an on-demand payout to the seller's default deposit method in Seller Central for the given marketplaceId and accountType, if eligible.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Transfers",
+      "operations": 1
+    },
+    {
+      "name": "Uploads_createUploadDestinationForResource",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Creates an upload destination, returning the information required to upload a file to the destination and to programmatically access the file.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "write",
+      "resource": "Uploads",
+      "operations": 1
+    },
+    {
+      "name": "Vehicles_getVehicles",
+      "description": "Catalog entry. Runs in your Kuudo deployment, not here. Get the latest collection of vehicles",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": true
+      },
+      "access": "read",
+      "resource": "Vehicles",
+      "operations": 1
+    }
+  ]
+}

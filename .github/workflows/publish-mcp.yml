@@ -1,0 +1,44 @@
+name: Publish to MCP Registry
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: mcp-registry-publish
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "lts/*"
+
+      - name: Install and smoke-test the stub
+        run: |
+          npm ci
+          node -e "import('./src/index.mjs').catch(e => { console.error(e); process.exit(1) }); setTimeout(() => process.exit(0), 1500)"
+
+      - name: Install mcp-publisher v1.8.1 (pinned by checksum)
+        run: |
+          curl -sSL -o mcp-publisher.tar.gz "https://github.com/modelcontextprotocol/registry/releases/download/v1.8.1/mcp-publisher_linux_amd64.tar.gz"
+          echo "a06c9096dcb9727c13555b6be26c7effa707b01f06a4c561ba7a3635443cf2cc  mcp-publisher.tar.gz" | sha256sum -c -
+          tar xzf mcp-publisher.tar.gz mcp-publisher
+
+      - name: Tag must match server.json version
+        run: |
+          TAG="${GITHUB_REF#refs/tags/v}"
+          VERSION="$(node -p "require('./server.json').version")"
+          test "$TAG" = "$VERSION" || { echo "tag v$TAG does not match server.json version $VERSION"; exit 1; }
+
+      - name: Authenticate to MCP Registry
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish
+        run: ./mcp-publisher publish

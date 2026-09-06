@@ -1,0 +1,12 @@
+{
+  "name": "kuudo-mcp-facade",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Catalog-only MCP stub for a Kuudo MCP server. Execution runs in your Kuudo deployment.",
+  "type": "module",
+  "bin": { "kuudo-mcp-facade": "src/index.mjs" },
+  "scripts": { "start": "node src/index.mjs" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "@modelcontextprotocol/sdk": "1.30.0" },
+  "license": "MIT"
+}

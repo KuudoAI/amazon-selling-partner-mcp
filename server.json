@@ -1,0 +1,39 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.KuudoAI/amazon-selling-partner-mcp",
+  "title": "Amazon Seller Central MCP server (Amazon Selling Partner MCP)",
+  "description": "MCP server for the Amazon Selling Partner API: orders, listings, pricing, FBA, and reimbursements.",
+  "websiteUrl": "https://www.kuudo.com/features/amazon-selling-partner-mcp/",
+  "repository": {
+    "url": "https://github.com/KuudoAI/amazon-selling-partner-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://{HOSTNAME}/mcp",
+      "variables": {
+        "HOSTNAME": {
+          "description": "Hostname of your Amazon Selling Partner MCP deployment.",
+          "isRequired": true,
+          "placeholder": "mcp.example.com"
+        }
+      },
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {AUTH_TOKEN}",
+          "description": "Kuudo API key or deployment bearer token.",
+          "variables": {
+            "AUTH_TOKEN": {
+              "description": "Kuudo API key or deployment bearer token.",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
