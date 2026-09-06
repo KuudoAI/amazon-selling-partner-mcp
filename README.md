@@ -27,7 +27,29 @@ Replace `<your-host>` with the hostname of your deployment and the bearer value 
 
 ## What this repository is
 
-This repository holds registry metadata and a catalog-only stub. Live execution runs in your Kuudo deployment. The server source is not published. The stub in `src/` answers `tools/list` with the catalog below and returns an error with setup guidance on any call, so registries and clients can inspect the surface without any access to Amazon.
+This repository holds registry metadata and a catalog-only stub. Live execution runs in your Kuudo deployment. The server source is not published. The stub in `src/` answers `tools/list` with the catalog below, serves the same catalog as one resource (`kuudo://catalog/tools.json`), offers one prompt (`connect`) carrying the setup guidance, and returns an error with that guidance on any call, so registries and clients can inspect the surface without any access to Amazon.
+
+### Inspect the catalog locally with Docker
+
+The image runs the same catalog-only stub over stdio. It is not the live server.
+
+```bash
+docker build -t amazon-selling-partner-mcp .
+docker run -i --rm amazon-selling-partner-mcp
+```
+
+Point a client at it with a stdio entry:
+
+```json
+{
+  "mcpServers": {
+    "amazon-selling-partner-mcp-catalog": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "amazon-selling-partner-mcp"]
+    }
+  }
+}
+```
 
 ## Tools
 
