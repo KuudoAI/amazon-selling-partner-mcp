@@ -5,7 +5,7 @@
   "connectUrl": "https://<your-host>/mcp",
   "operationCount": 304,
   "toolCount": 303,
-  "toolSurfaceNote": "304 Selling Partner API operations exposed as 303 tools, because two operations share one name. The production server's built-in setup and status tools are not listed here.",
+  "toolSurfaceNote": "Two operations share one name and collapse into one tool. The production server's built-in setup and status tools are not listed here.",
   "resources": [
     {
       "name": "AplusContent",
@@ -181,7 +181,7 @@
     },
     {
       "name": "Shipping",
-      "count": 19
+      "count": 20
     },
     {
       "name": "ShippingLegacy",

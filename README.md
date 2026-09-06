@@ -31,7 +31,9 @@ This repository holds registry metadata and a catalog-only stub. Live execution 
 
 ## Tools
 
-304 API operations exposed as 303 tools across 51 Selling Partner API resources. 304 Selling Partner API operations exposed as 303 tools, because two operations share one name. The production server's built-in setup and status tools are not listed here.
+304 API operations exposed as 303 tools across 51 Selling Partner API resources. Two operations share one name and collapse into one tool. The production server's built-in setup and status tools are not listed here.
+
+Argument schemas are not published in this catalog: every tool carries an empty object schema, and the live server in your deployment validates the real parameters on each call.
 
 | Resource | Operations |
 | --- | ---: |
@@ -78,7 +80,7 @@ This repository holds registry metadata and a catalog-only stub. Live execution 
 | SellerWallet | 12 |
 | Services | 17 |
 | ShipmentInvoicing | 3 |
-| Shipping | 19 |
+| Shipping | 20 |
 | ShippingLegacy | 9 |
 | Solicitations | 2 |
 | SupplySources | 6 |
@@ -437,7 +439,7 @@ Operator guides grounded in Amazon's own documentation, each with the artifact t
 
 ## Reads, writes, approvals
 
-Read tools are safe to call freely. Write tools are guarded and can require approval before anything changes on Amazon. The full read-versus-write split and the audit trail are documented at https://www.kuudo.com/docs/mcp-reference/amazon-sp-tools/.
+Read tools are safe to call freely. Write tools are guarded and can require approval before anything changes on Amazon. The full read-versus-write split is documented at https://www.kuudo.com/docs/mcp-reference/amazon-sp-tools/.
 
 ## Kuudo
 
