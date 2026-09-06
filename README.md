@@ -2,7 +2,7 @@
 
 One MCP for the entire Amazon Selling Partner API: 304 operations across 40+ services, from Catalog, Listings, and Orders to FBA and A+ Content.
 
-[![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2?style=flat-square)](https://modelcontextprotocol.io/) [![Registry](https://img.shields.io/badge/MCP%20Registry-io.github.KuudoAI%2Famazon-selling-partner-mcp-blue?style=flat-square)](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.KuudoAI%2Famazon-selling-partner-mcp&version=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE) [![Community](https://img.shields.io/badge/Kuudo-community-D97757?style=flat-square)](https://github.com/KuudoAI/community)
+[![MCP](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2?style=flat-square)](https://modelcontextprotocol.io/) [![Registry](https://img.shields.io/badge/MCP%20Registry-io.github.KuudoAI%2Famazon--selling--partner--mcp-blue?style=flat-square)](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.KuudoAI%2Famazon-selling-partner-mcp&version=latest) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE) [![Community](https://img.shields.io/badge/Kuudo-community-D97757?style=flat-square)](https://github.com/KuudoAI/community)
 
 Product page: https://www.kuudo.com/features/amazon-selling-partner-mcp/ · Docs: https://www.kuudo.com/docs/mcp-reference/amazon-sp-tools/ · Pricing: https://www.kuudo.com/pricing.md
 
