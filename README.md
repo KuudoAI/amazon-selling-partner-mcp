@@ -473,3 +473,7 @@ Read tools are safe to call freely. Write tools are guarded and can require appr
 - Machine-readable: https://www.kuudo.com/llms.txt · https://www.kuudo.com/pricing.md
 
 Generated from KuudoAI/marketing. Do not edit by hand; changes are overwritten on the next sync.
+
+## Smithery listing
+
+See [Smithery publishing](smithery/README.md) for the hosted endpoint, API-key configuration, and discovery prerequisites.
